@@ -1,0 +1,21 @@
+/**app.wxss**/
+.container {
+  margin:30rpx;
+} 
+
+button {
+  background: initial;
+}
+
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}
+
+
+page {
+  background: #f6f6f6;
+}

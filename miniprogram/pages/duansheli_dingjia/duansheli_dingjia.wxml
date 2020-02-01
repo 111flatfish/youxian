@@ -1,0 +1,17 @@
+<!--miniprogram/pages/duansheli_dingjia/duansheli_dingjia.wxml-->
+<view class="container">
+  <view class="duansheli">
+    <view class="duansheli_pingjia">
+      <text>{{pingjia}}</text>
+    </view>
+    <view class="duansheli_dingjia">
+      <text>￥{{dingjia}}</text>
+      <text>使用优惠券</text>
+      <text>我们如何定价？</text>
+    </view>
+    <view class="duansheli_submit">
+      <button>断了</button>
+      <button>想想</button>
+    </view>
+  </view>
+</view>

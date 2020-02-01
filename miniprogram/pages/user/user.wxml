@@ -1,0 +1,56 @@
+<!--miniprogram/pages/user/user.wxml-->
+<view class="container">
+  <view class="user_info">
+    <view class="user_info_img">
+      <image src="{{user.headimg}}"></image>
+      <text>{{user.username}}</text>
+    </view>
+    <view class="user_info_menu">
+      <view class="user_info_menuitem">
+        <mp-icon style="display:block" icon="star" size="25" color="black"></mp-icon>
+        <text>收藏</text>
+      </view>
+      <view class="user_info_menuitem">
+       <mp-icon style="display:block" icon="time" size="25" color="black"></mp-icon>
+        <text>足迹</text>
+      </view>
+      <view class="user_info_menuitem">
+        <mp-icon style="display:block" icon="bellring-on" size="25" color="black"></mp-icon>
+        <text>消息</text>
+      </view>
+      <view class="user_info_menuitem">
+       <mp-icon style="display:block" icon="location" size="25" color="black"></mp-icon>
+        <text>地址</text>
+      </view>
+    </view>
+  </view>
+  <view class="user_history">
+    <view class="user_history_title">
+      <view  wx:for="{{['买买买','断舍离']}}" wx:key="*this" bindtap="changeHistoryTitle" data-index="{{index}}">
+        <text class="{{currentMenuItem==index?'user_history_title_active':''}}">{{item}}</text>
+      </view>
+    </view>
+    <view class="user_history_content">
+        <block wx:for="{{goodslist}}">
+          <text class="user_history_content_date">{{item.date}}</text>
+          <view class="user_history_content_goods" wx:for="{{item.goods}}" wx:for-item="good">
+            <image src="{{good.src}}"></image>
+            <text>{{good.name}}</text>
+            <text>￥{{good.price}}</text>
+          </view>
+        </block>
+    </view>
+    <view class="user_history_order">
+      <view class="user_history_order_info">
+        <text class="title">收货信息</text>
+        <mp-icon icon="qr-code" size="20" color="black" style="position:absolute;right:24rpx;top:22rpx;"></mp-icon>
+        <view>
+          <text>{{order.name}}</text>
+          <text>{{order.phone}}</text>
+          <text>{{order.address}}</text>
+        </view>
+      </view>
+      <text bindtap="trigger" class="trigger">{{triggerText}} {{triggerIcon}}</text>
+    </view>
+  </view>
+</view>

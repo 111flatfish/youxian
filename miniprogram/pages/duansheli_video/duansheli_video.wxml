@@ -1,0 +1,27 @@
+<!--miniprogram/pages/duansheli_video/duansheli_video.wxml-->
+<view class="container">
+  <view class="duansheli_video_header">
+    <image src="../../images/duansheli_video1.png"></image>
+     <text>{{currentVideoTip}}</text>
+  </view>
+ 
+  <view class="duansheli_video_center">
+    <scroll-view scroll-x class="duansheli_video_center_scrollview">
+      <view class="duansheli_video_list"  wx:for="{{meidalist}}" wx:key="*this">
+        <image src="{{item}}"></image>
+      </view>
+      <view class="duansheli_video_lastitem">+</view>
+    </scroll-view>
+    <view class="duansheli_video_center_tip">
+      <view>
+        <text>{{currentCenterText1}}</text>
+        <text>{{currentCenterText2}}</text>
+      </view>
+      <navigator>{{currentCenterNav}}</navigator>
+    </view>
+  </view>
+  <view class="duansheli_video_footer" bindtap="saveMedia">
+    <view class="circle"></view>
+    <view class="line"></view>
+  </view>
+</view>

@@ -1,0 +1,61 @@
+/* miniprogram/pages/duansheli_dingjia/duansheli_dingjia.wxss */
+@import "../../common/common.wxss";
+.duansheli{
+  margin-top: 32rpx;
+}
+.duansheli_pingjia{
+  font-size: 56rpx;
+  margin-top: 116rpx;
+  color: #3c3c3c;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+.duansheli_dingjia text:nth-of-type(1){
+  font-size: 200rpx;
+  color: #0142E6;
+  margin-top: 18rpx;
+  text-align: center;
+  display: block;
+}
+.duansheli_dingjia text:nth-of-type(2){
+  font-size: 32rpx;
+  color: #999999;
+  font-weight:400;
+  opacity: 0.5;
+  margin-top: 22rpx;
+  text-align: center;
+  display: block;
+}
+.duansheli_dingjia text:nth-of-type(3){
+  font-size:32rpx;
+  font-weight:400;
+  color:rgba(0,122,255,1);
+  margin-top: 18rpx;
+  text-align: center;
+  display: block;
+}
+.duansheli_submit button:nth-of-type(1){
+  width:154rpx;
+  height:72rpx;
+  background:rgba(1,66,230,1);
+  border-radius:36rpx;
+  color: #fff;
+  font-size: 32rpx;
+  line-height: 72rpx;
+  text-align: center;
+  margin-top: 136rpx;
+}
+.duansheli_submit button:nth-of-type(2){
+  width:154rpx;
+  height:72rpx;
+  background:#fff;
+  border-radius:36rpx;
+  color: #fff;
+  font-size: 32rpx;
+  line-height: 72rpx;
+  border: 2rpx solid #FF6323;
+  color: #FF6323;
+  text-align: center;
+  margin-top: 32rpx;
+}

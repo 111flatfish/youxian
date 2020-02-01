@@ -1,0 +1,71 @@
+<!--miniprogram/pages/goods_detail/goos_detail.wxml-->
+<view class="container">
+  <!-- 顶部图片 -->
+  <view class="goods_detail_img">
+    <image src="{{goods.headimg}}"></image>
+    <button>更多图片</button>
+  </view> 
+  <!-- 中部商品描述 -->
+  <view class="goods_detail_title">
+    <text>{{goods.name}}</text>
+    <text>￥{{goods.price}}</text>
+    <text>{{goods.dec}}</text>
+    <view class="goods_lable">
+      <text wx:for="{{goods.lable}}">{{item}}</text>
+    </view>
+  </view>
+  <!-- 其他描述 -->
+  <view class="goods_detail_info">
+    <text>其他描述</text>
+    <view>
+      <text class="goods_pinpai">品牌：{{goods.others.pinpai}}</text>
+        <text class="goods_pinpai">外观：{{goods.others.waiguan}}</text>
+        <text class="goods_pinpai">原价：{{goods.others.yuanjia}}</text>
+    </view>
+    <view>
+      <text class="goods_pinpai">功能：{{goods.others.gongneng}}</text>
+    
+      <text class="goods_pinpai">外观：{{goods.others.waiguan}}</text>
+      <text class="goods_pinpai">使用时间：{{goods.others.time}}</text>
+    </view>
+  </view>
+  <!-- 服务说明 -->
+  <view class="goods_detail_serve">  
+    <text class="title">服务说明</text>
+    <view class="serve">
+      <text>{{goods.serve}}</text>
+      <text>∨</text>
+    </view>
+    <view class="zhankai"></view>
+  </view>
+  <!-- 底部细节图 -->
+  <view class="goods_detail_dec">
+    <view class="goods_detail_dec_title">
+      <view  wx:for="{{['商品详情','推荐']}}" wx:key="*this" bindtap="changeHistoryTitle" data-index="{{index}}">
+        <text class="{{currentMenuItem==index?'goods_detail_dec_title_active':''}}">{{item}}</text>
+      </view>
+    </view>
+    <view class="goods_detail_dec_content">
+      <text>瑕疵说明</text>
+      <text>{{goods.xiaci}}</text>
+      <text>细节图</text>
+      <view>
+        <image wx:for="{{goods.detailimg}}" src="{{item}}"></image>
+      </view>
+    </view>
+  </view>
+  <!-- 底部按钮 -->
+  <view class="goods_detail_menu">
+    <view class="cart">
+      <image src="../../images/cart_none.png"></image>
+    </view>
+    <view class="serve">
+      <image src="../../images/service.png"></image>
+    </view>
+    <button bindtap="addToCart">加入购物车</button>
+    <button>立即购买</button>
+  </view>
+    <view class="cart_add" wx:if="{{showAdd}}">
+        <image src="../../images/cart_none.png"></image>
+    </view>
+</view>

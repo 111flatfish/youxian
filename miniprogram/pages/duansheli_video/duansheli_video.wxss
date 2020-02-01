@@ -1,0 +1,135 @@
+/* miniprogram/pages/duansheli_video/duansheli_video.wxss */
+@import "../../common/common.wxss";
+/* 头部 */
+.container{
+  margin: 0;
+}
+.duansheli_video_header{
+  width: 750rpx;
+  position: relative;
+}
+.duansheli_video_header text{
+  width:280rpx;
+  height:72rpx;
+  box-shadow:0 3rpx 6rpx rgba(0,0,0,0.16);
+  background-color: #F0F0F0;
+  color: #565656;
+  opacity:1;
+  border-radius:8rpx;
+  font-size: 32rpx;
+  position: absolute;
+  text-align: center;
+  line-height: 72rpx;
+  top: 20rpx;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.duansheli_video_header image{
+  width: 100%;
+  height: 750rpx;
+}
+/* 中部 */
+.duansheli_video_center{
+  margin-top: 8rpx;
+}
+.duansheli_video_center_scrollview{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  width: 100%;
+  margin-left: 16rpx;
+}
+.duansheli_video_center_scrollview .duansheli_video_list{
+  margin-right: 16rpx;
+  display: inline-block;
+}
+.duansheli_video_center_scrollview .duansheli_video_list image{
+  width: 190rpx;
+  height: 190rpx;
+}
+.duansheli_video_center_scrollview .duansheli_video_lastitem{
+  width: 190rpx;
+  height: 190rpx;
+  border:0.3rpx solid rgba(1,66,230,1);
+  opacity:0.95;
+  border-radius:8rpx;
+  text-align: center;
+  font-size: 64rpx;
+  color: rgba(1,66,230,1);
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 190rpx;
+}
+.duansheli_video_center_tip{
+  margin: 16rpx auto;
+  width:658rpx;
+  height:138rpx;
+  border:0.6rpx solid rgba(112,112,112,1);
+  opacity:1;
+  border-radius:8rpx;
+  position: relative;
+}
+.duansheli_video_center_tip view{
+  
+  margin-top: 30rpx;
+  margin-left: 32rpx;
+}
+.duansheli_video_center_tip text{
+  font-size: 28rpx;
+  font-weight:400;
+  line-height:40rpx;
+  color: #565656;
+  display: block;
+}
+.duansheli_video_center_tip navigator{
+  width:200rpx;
+  height:60rpx;
+  background:rgba(1,66,230,1);
+  opacity:1;
+  border-radius:30rpx;
+  font-size: 28rpx;
+  color: #fff;
+  line-height: 60rpx;
+  text-align: center;
+  position: absolute;
+  top:40rpx;
+  right: 32rpx;
+}
+.duansheli_video_footer{
+  margin: 162rpx auto 0 auto;
+}
+.duansheli_video_footer .circle{
+  width: 120rpx;
+  height: 120rpx;
+  background-color: #999999;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+
+}
+.duansheli_video_footer .circle::before{
+  content: "";
+  width: 72rpx;
+  height: 72rpx;
+  background-color: #0142E6;
+  border: 12rpx solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.duansheli_video_footer .line{
+  width: 268rpx;
+  height: 10rpx;
+  background-color: #000;
+  border-radius: 200rpx;
+  margin: 118rpx auto 16rpx auto;
+}
+
+

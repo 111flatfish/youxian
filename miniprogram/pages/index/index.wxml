@@ -1,0 +1,135 @@
+<!--index.wxml-->
+<view class="container">
+<!-- banner -->
+ <swiper autoplay="true" interval="3000" duration="1000" class="index_banner">
+          <swiper-item>
+            <view class="swiper-item">
+            <image src="../../images/banner1.png"></image>
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view class="swiper-item">
+            <image src="../../images/banner2.png"></image>
+            </view>
+          </swiper-item>
+           <swiper-item>
+            <view class="swiper-item">
+            <image src="../../images/banner3.png"></image>
+            </view>
+          </swiper-item>
+      </swiper>
+<!-- 搜索框 -->
+  <view class="index_search">
+    <input type="text" placeholder="搜索想要的商品"></input>
+    <icon type="search"></icon>
+  </view>
+  <!-- 今日上新 -->
+  <view class="index_today">
+    <view class="index_today_title">
+      <text>今日上新</text>
+      <span>全部</span>
+    </view>
+    <view class="index_today_content">
+    <scroll-view scroll-x class="scrollview">
+      <view class="index_today_content_item">
+            <view class="index_today_content_item_img">
+              <image src="../../images/水壶.png"></image>
+            </view>
+            <view class="index_today_content_item_dec">
+              <text>￥39.90</text>
+              <text>防烫水壶</text>
+            </view>
+      </view>
+       <view class="index_today_content_item">
+            <view class="index_today_content_item_img">
+              <image src="../../images/风扇.png"></image>
+            </view>
+            <view class="index_today_content_item_dec">
+              <text>￥69.00</text>
+              <text>静音电风扇</text>
+            </view>
+      </view>
+       <view class="index_today_content_item" bindtap="toGoodsDetail">
+            <view class="index_today_content_item_img">
+              <image src="../../images/电饭煲.png"></image>
+            </view>
+            <view class="index_today_content_item_dec">
+              <text>￥39.90</text>
+              <text>智能电饭煲</text>
+            </view>
+      </view>
+       <view class="index_today_content_item">
+            <view class="index_today_content_item_img">
+              <image src="../../images/音响.png"></image>
+            </view>
+            <view class="index_today_content_item_dec">
+              <text>￥44.90</text>
+              <text>MUJI</text>
+            </view>
+      </view>
+    </scroll-view>
+    </view>
+  </view>
+  <!-- 求闲若渴 -->
+  <view class="index_requirement" style="background:url('../../images/background.png') no-repeat top center;background-size:690rpx 200rpx;">
+    <view class="index_requirement_text">
+      <text>求闲若渴</text>
+      <text>不知道该断舍离什么？来看看大家都想要什吧！</text>
+      <text>每月1日更新</text>
+    </view>
+    <view class="index_requirement_img">
+      <image src="../../images/咖啡.png"></image>
+      <text>本月大家都想买</text>
+      <image src="../../images/皇冠.png"></image>
+    </view>
+  </view>
+  <!-- 推荐 -->
+  <view class="index_category">
+    <scroll-view class="index_category_title" scroll-x="true">
+      <text class="{{currentIndex==index?'index_category_active':''}}" wx:for="{{categoryTitle}}" wx:key="item" bindtap="changeCategoryTitle" data-index="{{index}}">{{item}}</text>
+    </scroll-view>
+    <view class="index_category_content">
+      <view class="index_category_content_item_1">
+        <image src="../../images/耳机.png"></image>
+        <text>￥136.99</text>
+        <text>KREAFUNK 头戴式耳机，时尚，大气，上档次</text>
+      </view>
+      <view class="index_category_content_item_2">
+        <image src="../../images/音响.png"></image>
+        <text>￥209.00</text>
+        <text>EDIFIER 智能蓝牙小音响，无噪音，物美价廉</text>
+      </view>
+      <view class="index_category_content_item_3">
+        <image src="../../images/音响.png"></image>
+        <text>￥209.00</text>
+        <text>EDIFIER 智能蓝牙小音响，无噪音，物美价廉</text>
+      </view>
+      <view class="index_category_content_item_4">
+        <image src="../../images/耳机.png"></image>
+        <text>￥136.99</text>
+        <text>KREAFUNK 头戴式耳机，时尚，大气，上档次</text>
+      </view>
+
+       <view class="index_category_content_item_1">
+        <image src="../../images/耳机.png"></image>
+        <text>￥136.99</text>
+        <text>KREAFUNK 头戴式耳机，时尚，大气，上档次</text>
+      </view>
+      <view class="index_category_content_item_2">
+        <image src="../../images/音响.png"></image>
+        <text>￥209.00</text>
+        <text>EDIFIER 智能蓝牙小音响，无噪音，物美价廉</text>
+      </view>
+      <view class="index_category_content_item_3">
+        <image src="../../images/音响.png"></image>
+        <text>￥209.00</text>
+        <text>EDIFIER 智能蓝牙小音响，无噪音，物美价廉</text>
+      </view>
+      <view class="index_category_content_item_4">
+        <image src="../../images/耳机.png"></image>
+        <text>￥136.99</text>
+        <text>KREAFUNK 头戴式耳机，时尚，大气，上档次</text>
+      </view>
+    </view>
+  </view>
+</view>

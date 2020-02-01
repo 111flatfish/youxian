@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="duansheli">
+    <view class="duansheli_video" style="background:url('../../images/duansheli_background1.jpg') no-repeat center center">
+      <text>1.</text>
+      <text>给您的闲置物品拍个照帮助我们进行定价</text>
+      <navigator url="../duansheli_video/duansheli_video">视频教程</navigator>
+    </view>
+     <view class="duansheli_dingjia" style="background:url('../../images/duansheli_background2.jpg') no-repeat center center;background-size:100% 100%">
+      <text>2.</text>
+      <text>我们将在2个工作日内发送报价</text>
+      <navigator url="../duansheli_dingjia/duansheli_dingjia">如何定价</navigator>
+    </view>
+     <view class="duansheli_wuliu" style="background:url('../../images/duansheli_background3.jpg') no-repeat center center">
+      <text>3.</text>
+      <text>确认报价后我们将为您送货上门</text>
+     <navigator url="../duansheli_video/duansheli_video">物流介绍</navigator>
+    </view>
+  </view>
+   <view class="duansheli_enter">
+     <navigator url="../duansheli_video/duansheli_video">></navigator>
+    </view>
+</view>
