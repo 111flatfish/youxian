@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "screendialog":"../../components/screendialog/screendialog"
+  }
 }

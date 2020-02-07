@@ -1,0 +1,192 @@
+/* components/screendialog/screendialog.wxss */
+.dialog{
+  width:750rpx;
+  height:1114rpx;
+  border-radius:16rpx 16rpx 0rpx 0rpx;
+  padding: 40rpx;
+  display: block;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+/* 顶部 */
+.dialog .dialog_head{
+  text-align: right;
+  height: 40rpx;
+  width: 100%;
+  margin-bottom: 30rpx;
+}
+.dialog .dialog_head button{
+  font-size:32rpx;
+  font-weight:500;
+  width: 64rpx;
+  height: 40rpx;
+  color:rgba(146,146,146,1);
+  text-align: right;
+  padding: 0;
+  line-height: 40rpx;
+  float: right;
+}
+/* 中部 */
+.dialog .dialog_center_title{
+  font-size:36rpx;
+  font-weight:bold;
+  color:rgba(60,60,60,1);
+  margin-bottom: 30rpx;
+}
+.dialog .dialog_center_goods{
+  width: 100%;
+  height: 228rpx;
+  position: relative;
+}
+.dialog .dialog_center_goods image{
+  width:228rpx;
+  height: 228rpx;
+  display: inline-block;
+}
+.dialog .dialog_center_goods .dialog_dec{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.dialog .dialog_center_goods .dialog_dec text{
+  font-size:36rpx;
+  color:rgba(60,60,60,1);
+  display: block;
+  text-align: right;
+} 
+.dialog .dialog_center_goods .dialog_dec text:nth-of-type(2){
+  margin-bottom: 30rpx;
+}
+.dialog .dialog_center_goods .dialog_dec text:nth-of-type(1){
+  margin-bottom: 16rpx;
+}
+.dialog .dialog_center_goods .dialog_dec text:nth-of-type(3){
+  font-size:24rpx;
+  font-weight:400;
+  color:rgba(1,66,230,1);
+}
+.dialog .dialog_center_message .dialog_center_address{
+  width: 100%;
+  border-bottom: 2rpx solid rgba(236,236,236,1);
+  position: relative;
+  margin-top: 80rpx;
+  padding-bottom: 26rpx;
+}
+.dialog .dialog_center_message .dialog_center_address text:nth-of-type(1){
+  font-size:32rpx;
+  font-weight:400;
+  color:rgba(86,86,86,1);
+ 
+}
+.dialog .dialog_center_message .dialog_center_address .addAddress{
+  font-size:32rpx;
+  font-weight:400;
+  color:#3c3c3c;
+  position: absolute;
+  right: 0;
+  height: 44rpx;
+  top: 0;
+  display: inline-block;
+}
+.dialog .dialog_center_message .dialog_center_address input{
+  font-size:32rpx;
+  font-weight:400;
+  color:#3c3c3c;
+  text-align: right;
+  padding-top: 18rpx;
+  display: block;
+}
+.dialog .dialog_center_message .dialog_center_phone{
+  height: 100rpx;
+  width: 100%;
+  border-bottom: 2rpx solid rgba(236,236,236,1);
+  line-height: 100rpx;
+  position: relative;
+}
+.dialog .dialog_center_message .dialog_center_phone text:nth-of-type(1){
+  font-size:32rpx;
+  font-weight:400;
+  color:rgba(86,86,86,1);
+  display: inline-block;
+  height: 100rpx;
+  line-height: 100rpx;
+  vertical-align: top;
+}
+.dialog .dialog_center_message .dialog_center_phone input{
+  width: 526rpx;
+  display: inline-block;
+  text-align: right;
+  padding: 0;
+  height: 100rpx;
+}
+/* 验证码 */
+.dialog .dialog_center_message .dialog_center_code{
+  height: 100rpx;
+  width: 100%;
+  border-bottom: 2rpx solid rgba(236,236,236,1);
+  line-height: 100rpx;
+  position: relative;
+}
+.dialog .dialog_center_message .dialog_center_code text:nth-of-type(1){
+  font-size:32rpx;
+  font-weight:400;
+  color:rgba(86,86,86,1);
+  display: inline-block;
+  height: 100rpx;
+  vertical-align: top;
+}
+.dialog .dialog_center_message .dialog_center_code input{
+  font-size:32rpx;
+  font-weight:400;
+  color:rgba(86,86,86,1);
+  height: 100rpx;
+  text-align: right;
+  width: 354rpx;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.dialog .dialog_center_message .dialog_center_code .noCode{
+  width:208rpx;
+  height:56rpx;
+  line-height: 56rpx;
+  border:2rpx solid rgba(56,56,56,1);
+  border-radius:15px;
+  display: inline-block;
+  font-size:28rpx;
+  font-weight:400;
+  color:rgba(56,56,56,1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.dialog .dialog_center_message .dialog_center_code .hasCode{
+  width:208rpx;
+  height:56rpx;
+  line-height: 56rpx;
+  border:2rpx solid rgb(196, 196, 196);
+  border-radius:15px;
+  display: inline-block;
+  font-size:28rpx;
+  color:rgb(196, 196, 196);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+/* 前往支付 */
+.dialog .dialog_foot button{
+  width:690rpx;
+  height:94rpx;
+  background:rgba(1,66,230,1);
+  opacity:0.78;
+  border-radius:8rpx;
+  color: #fff;
+  font-size: 36rpx;
+  text-align: center;
+  margin: 174rpx 0;
+  position: relative;
+  left: -10rpx;
+}

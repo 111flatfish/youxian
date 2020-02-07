@@ -1,0 +1,41 @@
+<!--components/screendialog/screendialog.wxml-->
+<view class="dialog">
+  <view class="dialog_head">
+    <button bindtap="cancelbuy">取消</button>
+  </view>
+  <view class="dialog_center">
+    <view class="dialog_center_title">
+      请填写购买信息
+    </view>
+    <view class="dialog_center_goods">
+      <image src="../../images/dianfanbao.png"></image>
+      <view class="dialog_dec">
+        <text>￥ {{goods.price}}</text>
+        <text>{{goods.name}}</text>
+        <text>瑕疵说明</text>
+      </view>   
+    </view>
+    <view class="dialog_center_message">
+      <view class="dialog_center_address">
+        <text>收货地址</text>
+        <!-- 省市区选择器 -->
+          <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+           <text bindtap="addAddress" class="addAddress">{{goods.address}} ></text>
+  </picker>
+        <input type="text" placeholder="请输入详细地址" wx:if="{{hasDetailAddress}}"></input>
+      </view>
+      <view class="dialog_center_phone">
+        <text>手机号码</text>
+        <input type="text" placeholder="请输入"></input>
+      </view>
+      <view class="dialog_center_code">
+        <text>验证码</text>
+        <input type="text" placeholder="请输入|"></input>
+        <button bindtap="getCode" disabled="{{hasGetCode}}" class="{{hasGetCode==true?'hasCode':'noCode'}}">{{codeText}}</button>
+      </view>
+    </view>
+  </view>
+  <view class="dialog_foot">
+    <button bindtap="pay">￥ {{goods.price}} 前往支付</button>
+  </view>
+</view>

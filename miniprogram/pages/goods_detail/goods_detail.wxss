@@ -3,6 +3,7 @@
 /* 顶部展示图 */
 .container{
   margin: 0;
+  position: relative;
 }
 .goods_detail_img{
   position: relative;
@@ -174,7 +175,7 @@
 /* 底部按钮 */
 .goods_detail_menu{
   position: fixed;
-  bottom: 30rpx;
+  bottom:30rpx;
   text-align: center;
   left: 40rpx;
 }
@@ -196,6 +197,15 @@
   bottom: 152rpx;
   right: 50rpx;
   line-height: 80rpx;
+}
+.goods_detail_menu .cart .cart_status{
+   position: absolute;
+    right: 14rpx;
+    top:14rpx;
+    width: 12rpx;
+    height: 12rpx;
+    border-radius: 50%;
+    background: #0142E6;
 }
 .goods_detail_menu .cart image{
   width: 48rpx;
@@ -235,33 +245,37 @@
   line-height: 80rpx;
   margin-left: 14rpx;
 }
+
 .cart_add{
- width: 10rpx;
-  height: 10rpx;
-  background-color: gray;
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #D1D1D1;
   border-radius:50%;
   text-align: center;
-  position: fixed;
+  position: absolute;
   bottom:40rpx;
-  right: 55%;
+  left: 300rpx;
   z-index: 2003
 }
 .cart_add image{
-  width: 5rpx;
-  height: 5rpx;
+  width: 30rpx;
+  height: 30rpx;
 }
-@keyframes add
-{
-  0% {transform: scale(6);opacity: 1;right: 550rpx;bottom:40rpx}
-  25% {transform:scale (4);opacity: 0.7;right: 400rpx;bottom:70rpx}
-  50% {transform: scale (2);opacity: 0.4;right: 300rpx;bottom:100rpx}
-  100% {transform:  scale (1);opacity: 0.1;right: 150rpx;bottom:150rpx}
+/* 半屏弹窗 */
+.screendialog .screendialog_mask{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1003;
+  
 }
-
-
-.cart_add{
-  animation: add 0.5s linear;
-  -moz-animation: add 0.5s linear;	/* Firefox */
-  -webkit-animation: add 0.5s linear;	/* Safari 和 Chrome */
-  -o-animation: add 0.5 linear;	/* Opera */
+.screendialog .screendialog_content{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  z-index: 2003;
 }

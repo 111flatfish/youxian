@@ -23,7 +23,10 @@ Page({
         detailimg:["../../images/detail1.png","../../images/detail2.png"]
       },
     currentMenuItem:0,
-    showAdd:false
+    showAdd:false,
+    scaleCart:false,
+    hasCart:false,
+    isBuy:false
   },
 
   /**
@@ -87,15 +90,70 @@ Page({
       currentMenuItem: ev.currentTarget.dataset.index
     });
   },
+  // 添加到购物车
   addToCart(){
     let that = this;
     this.setData({
       showAdd:true
     });
-    setTimeout(function(){
+    this.animate(".cart_add",[
+      {scale:[1.0,1.0],bottom:"40rpx",left:"300rpx"},
+      { scale: [0.5, 0.5], bottom: "96rpx", left: "450rpx"},
+      { scale: [0.1, 0.1], bottom: "152rpx", left: "600rpx"}
+    ],300,function(){
       that.setData({
         showAdd:false
-      })
-    },1000);
+      });
+      that.animate(".cart",[
+        {scale:[1.0,1.0]},
+        { scale: [1.2, 1.2]},
+        { scale: [1.0, 1.0]},
+      ],200,function(){
+        that.setData({
+          hasCart:true
+        });
+      });
+    });
+  },
+  // 立即购买
+  buy(){
+    let that = this;
+    this.setData({
+      isBuy:true
+    });
+    console.log("buy");
+    this.animate(".screendialog_content",[
+      {height:"0"},
+      { height: "500rpx" },
+      { height: "1114rpx" }
+    ],100,function(){
+      console.log("11");
+      that.animate(".screendialog_mask",[
+        {backgroundColor:"#000",opacity:0},
+        { backgroundColor: "#000", opacity: 0.5 },
+      ],10,function(){
+      }.bind(that));
+    }.bind(this));
+  },
+  // 取消购买
+  cancelBuy(){
+    let that = this;
+    console.log("cancel"
+    )
+    this.animate(".screendialog_content", [
+      { height: "1114rpx" },
+      { height: "500rpx" },
+      { height: "0rpx" }
+    ], 100, function () {
+      console.log("this.buy" + that.data.isBuy);
+      that.animate(".screendialog_mask", [
+        { backgroundColor: "#000", opacity: 0.5 },
+        { backgroundColor: "#000", opacity: 0 }
+      ], 10, function () {
+        that.setData({
+          isBuy:false
+        });
+      }.bind(that));
+    }.bind(this));
   }
 })
