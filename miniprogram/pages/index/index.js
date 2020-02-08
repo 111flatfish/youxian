@@ -19,5 +19,11 @@ Page({
     wx.navigateTo({
       url: '../goods_detail/goods_detail'
     })
+  },
+  // 跳转到求闲若渴
+  toQiuxian(){
+    wx.navigateTo({
+      url: '../qiuxianruoke/qiuxianruoke'
+    })
   }
 })

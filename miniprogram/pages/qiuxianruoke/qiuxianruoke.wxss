@@ -1,0 +1,127 @@
+/* miniprogram/pages/qiuxianruoke/qiuxianruoke.wxss */
+@import "../../common/common.wxss";
+.container{
+  padding: 0;
+  margin: 0;
+}
+.qiuxian_head{
+  width: 100%;
+  height: 340rpx;
+  position: relative;
+  overflow: hidden;
+  
+}
+.qiuxian_head>image{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 750rpx;
+  height: 340rpx;
+}
+.qiuxian_head text:nth-of-type(1){
+  font-size:40rpx;
+  font-weight:bold;
+  color:#000;
+  margin-top: 64rpx;
+  margin-left: 30rpx;
+  display: block;
+}
+.qiuxian_head text:nth-of-type(2){
+  font-size:28rpx;
+  color:#939393;
+   margin-left: 30rpx;
+   margin-top: 10rpx;
+   display: block;
+}
+
+.qiuxian_sale{
+  margin-top: 26rpx;
+  display: block;
+  text-align: right;
+  margin-right: 30rpx;
+}
+.qiuxian_sale button{
+  width: 180rpx;
+  height: 60rpx;
+  background-color: #5081FF;
+  font-size: 32rpx;
+  color: #fff;
+  line-height: 60rpx;
+  border-radius: 40rpx;
+  display: inline-block;
+}
+
+.qiuxian_get{
+  margin-top: 38rpx;
+}
+.qiuxian_get .qiuxian_get_item{
+  margin-bottom: 52rpx;
+  padding: 0 30rpx;
+  position: relative;
+}
+.qiuxian_get .qiuxian_get_item .qiuxian_get_item_img{
+  width: 200rpx;
+  height: 200rpx;
+  display: inline-block;
+  overflow: hidden;
+}
+.qiuxian_get .qiuxian_get_item .qiuxian_get_item_img>image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 4rpx;
+}
+.qiuxian_get .qiuxian_get_item .qiuxian_get_item_dec{
+  padding-top: 12rpx;
+  display: inline-block;
+  vertical-align: top;
+}
+.qiuxian_get .qiuxian_get_item .qiuxian_get_item_dec text:nth-of-type(1){
+  font-size: 36rpx;
+  color: #010101;
+  font-weight:bold;
+  margin-left: 24rpx;
+  display: block;
+}
+.qiuxian_get .qiuxian_get_item .qiuxian_get_item_dec text:nth-of-type(2){
+  font-size: 24rpx;
+  color: #939393;
+  margin-left: 6rpx;
+  display: inline-block;
+}
+.qiuxian_get .qiuxian_get_item .qiuxian_get_item_menu text{
+  width: 60rpx;
+  height: 60rpx;
+  font-size: 40rpx;
+  color: #464646;
+  font-weight: bold;
+  line-height: 60rpx;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 34rpx;
+}
+.qiuxian_get .qiuxian_get_item .qiuxian_get_item_menu text::before{
+  content: "";
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  background-color: #939393;
+  opacity: 0.5;
+  top: 0;
+  right: 0;
+  border-radius: 4rpx;
+}
+.qiuxian_get .qiuxian_get_item .qiuxian_get_item_menu button{
+  width: 180rpx;
+  height: 60rpx;
+  background-color: #fff;
+  border:2rpx solid rgba(112,112,112,1);
+  border-radius: 30rpx;
+  line-height: 60rpx;
+  text-align: center;
+  position: absolute;
+  right: 30rpx;
+  bottom: 0;
+  font-size: 32rpx;
+  color: #1b1b1b;
+}

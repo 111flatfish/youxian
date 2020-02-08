@@ -71,7 +71,7 @@
     </view>
   </view>
   <!-- 求闲若渴 -->
-  <view class="index_requirement" style="background:url('../../images/background.png') no-repeat top center;background-size:690rpx 200rpx;">
+  <view class="index_requirement" style="background:url('../../images/background.png') no-repeat top center;background-size:690rpx 200rpx;" bindtap="toQiuxian">
     <view class="index_requirement_text">
       <text>求闲若渴</text>
       <text>不知道该断舍离什么？来看看大家都想要什吧！</text>

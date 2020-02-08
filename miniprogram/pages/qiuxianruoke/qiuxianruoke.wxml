@@ -1,0 +1,27 @@
+<!--miniprogram/pages/qiuxianruoke/qiuxianruoke.wxml-->
+<view class="container">
+  <view class="qiuxian_head">
+    <image src="../../images/guo.png"></image>
+    <text>求闲若渴</text>
+    <text>这里是缺货好物榜单，排名越靠前越容易卖出好价钱噢!</text>
+  </view>
+  <view class="qiuxian_sale">
+    <button>我要卖</button>
+  </view>
+  <view class="qiuxian_get">
+    <view class="qiuxian_get_item" wx:for="{{goods}}">
+      <view class="qiuxian_get_item_img">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="qiuxian_get_item_dec">
+        <text>{{item.name}}</text>
+        <mp-icon icon="like" color="black" size="{{24}}" style="display:inline-block;margin-left:16rpx"></mp-icon>
+        <text>{{item.people}}人也想要</text>
+      </view>
+      <view class="qiuxian_get_item_menu">
+        <text>{{item.order}}</text>
+        <button>我也要</button>
+      </view>
+    </view>
+  </view>
+</view>
