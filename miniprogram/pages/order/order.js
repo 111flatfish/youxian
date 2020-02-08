@@ -1,11 +1,19 @@
-// miniprogram/pages/payed/payed.js
+// miniprogram/pages/order/order.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    address:"广工"
+    order:{
+      name:"无印良品电饭煲",
+      price:200,
+      username:"王二小",
+      phone:"12312341234",
+      address:"广东省广州市越秀区环市东路463号广工大院",
+      code:"123456789",
+      date:"2020-01-04"
+    }
   },
 
   /**
@@ -62,10 +70,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  checkOrder(){
-    wx.navigateTo({
-      url: '../../pages/order/order',
-    })
   }
 })

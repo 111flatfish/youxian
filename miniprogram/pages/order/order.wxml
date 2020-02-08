@@ -1,0 +1,45 @@
+<!--miniprogram/pages/order/order.wxml-->
+<view class="container">
+  <view class="order_dec">
+    <view class="order_dec_title">
+      订单信息
+    </view>
+    <view class="order_dec_img">
+      <image src="../../images/dianfanbao.png"></image>
+      <view class="order_dec_img_txt">
+        <text>￥ {{order.price}}</text>
+        <text>{{order.name}}</text>
+      </view>
+    </view>
+    <view class="order_dec_meg">
+        <view class="order_dec_meg_order">
+      <view class="order_dec_meg_info">
+        <text class="title">收货信息</text>
+        <mp-icon icon="qr-code" size="20" color="black" style="position:absolute;right:24rpx;top:22rpx;"></mp-icon>
+        <view>
+          <text>{{order.username}}</text>
+          <text>{{order.phone}}</text>
+          <text>{{order.address}}</text>
+        </view>
+      </view>
+    </view>
+    </view>
+    <view class="order_dec_menu">
+      <button>申请修改订单</button>
+      <button>取消订单</button>
+    </view>
+  </view>
+  <view class="order_num">
+    <view class="order_num_code">
+      <text>订单编号</text>
+      <view>
+        <button>复制</button>
+        <text>{{order.code}}</text>
+      </view>
+    </view>
+    <view class="order_num_date">
+      <text>下单日期</text>
+      <text>{{order.date}}</text>
+    </view>
+  </view>
+</view>

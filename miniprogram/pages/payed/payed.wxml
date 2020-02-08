@@ -12,7 +12,7 @@
     </view>
     <view class="payed_up_menu">
       <button>返回首页</button>
-      <button>查看订单</button>
+      <button bindtap="checkOrder">查看订单</button>
     </view>
   </view>
   <!-- 下方 -->
