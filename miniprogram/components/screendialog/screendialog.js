@@ -133,7 +133,14 @@ Component({
             wx.showToast({
               title: '支付接口失败',
               icon: "loading",
-              duration:2000
+              duration:3000,
+              success:function(){
+                setTimeout(function(){
+                  wx.navigateTo({
+                    url: '../../pages/payed/payed',
+                  })
+                },2000);
+              }
             })
            },
           'complete': function (res) {

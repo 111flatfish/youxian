@@ -1,0 +1,25 @@
+<!--miniprogram/pages/payed/payed.wxml-->
+<view class="container">
+  <!-- 上方 -->
+  <view class="payed_up">
+   <image src="../../images/dianfanbao.png"></image>
+    <view class="payed_up_tip">
+      <text>支付完成</text>
+      <text>请在选择时间内到{{address}}自提商品噢</text>
+    </view>
+    <view class="payed_up_erweima">
+      <image src="..." alt="后台在这里需要生成二维码"></image>
+    </view>
+    <view class="payed_up_menu">
+      <button>返回首页</button>
+      <button>查看订单</button>
+    </view>
+  </view>
+  <!-- 下方 -->
+  <view class="payed_down">
+    <view class="payed_down_title">推荐</view>
+    <view class="payed_down_content">
+    
+    </view>
+  </view>
+</view>

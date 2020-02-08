@@ -5,7 +5,8 @@
     "pages/duansheli_video/duansheli_video",
     "pages/duansheli_dingjia/duansheli_dingjia",
     "pages/user/user",
-    "pages/goods_detail/goods_detail"
+    "pages/goods_detail/goods_detail",
+    "pages/payed/payed"
   ],
   "window": {
     "backgroundColor": "#ffffff",

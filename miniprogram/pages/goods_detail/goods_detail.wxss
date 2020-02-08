@@ -7,10 +7,12 @@
 }
 .goods_detail_img{
   position: relative;
+  height: 550rpx;
+  overflow: hidden;
 }
 .goods_detail_img image{
   width: 750rpx;
-  height: 550rpx;
+  height: 750rpx;
 }
 .goods_detail_img button{
   width: 180rpx;
