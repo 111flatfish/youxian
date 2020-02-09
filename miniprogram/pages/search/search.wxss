@@ -1,0 +1,145 @@
+/* miniprogram/pages/search/search.wxss */
+@import "../../common/common.wxss";
+.search_top{
+  width: 100%;
+  height: 72rpx;
+  background-color: #f6f6f6;
+  border-radius: 10rpx;
+  display: block;
+  position: relative;
+}
+.search_top input{
+  width: 614rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  box-sizing: border-box;
+  padding: 10rpx 34rpx;
+  display: inline-block;
+}
+.searchIcon{
+  position: absolute;
+  right: 30rpx;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  line-height: 72rpx;
+}
+/* 搜索内容 */
+/* 有货 */
+.search_content .search_content_hasGoods{
+
+}
+/* 缺货 */
+.search_content_noGoods{
+  margin-top: 46rpx;
+}
+.search_content_noGoods .search_content_noGoods_item{
+  margin-bottom: 46rpx;
+}
+.search_content_noGoods .search_content_noGoods_item .search_content_noGoods_item_img{
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 4rpx;
+  display: inline-block;
+}
+.search_content_noGoods .search_content_noGoods_item .search_content_noGoods_item_img image{
+  width: 300rpx;
+  height: 300rpx;
+}
+.search_content_noGoods .search_content_noGoods_item .search_content_noGoods_item_dec {
+  width: 362rpx;
+  height: 300rpx;
+  display: inline-block;
+  margin-left: 24rpx;
+}
+.search_content_noGoods .search_content_noGoods_item .search_content_noGoods_item_dec .search_content_noGoods_msg{
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.search_content_noGoods .search_content_noGoods_item .search_content_noGoods_item_dec .search_content_noGoods_msg text:nth-of-type(1){
+  font-size:40rpx;
+  font-weight:bold;
+  line-height:56rpx;
+  color:rgba(1,1,1,1);
+  margin-top: 8rpx;
+  display: block;
+}
+.search_content_noGoods .search_content_noGoods_item .search_content_noGoods_item_dec .search_content_noGoods_msg text:nth-of-type(2){
+  width: 132rpx;
+  height: 40rpx;
+  border: 2rpx solid #707070;
+  border-radius: 24rpx;
+  text-align: center;
+  line-height:40rpx; 
+  font-size:24rpx;
+  color:#1b1b1b;
+  margin-top: 6rpx;
+  display: block;
+}
+.search_content_noGoods .search_content_noGoods_item .search_content_noGoods_item_dec .search_content_noGoods_msg text:nth-of-type(3){
+  font-size:32rpx;
+  color:#FB4242;
+  position: absolute;
+  top: 30rpx;
+  right: 34rpx;
+}
+.search_content_noGoods .search_content_noGoods_item .search_content_noGoods_item_dec .search_content_noGoods_btn{
+  display: block;
+  margin-top: 130rpx;
+}
+.search_content_noGoods .search_content_noGoods_item .search_content_noGoods_item_dec .search_content_noGoods_btn button{
+  display: inline-block;
+  width: 148rpx;
+  height: 56rpx;
+  border:2rpx solid rgba(147,147,147,1);
+  border-radius: 200rpx;
+  font-size:28rpx;
+  line-height:56rpx;
+  text-align: center;
+  color:rgba(1,66,230,1);
+  padding: 0 16rpx;
+  margin-bottom: 0;
+}
+.search_content_noGoods .search_content_noGoods_item .search_content_noGoods_item_dec .search_content_noGoods_btn text{
+  display: inline-block;
+  font-size:24rpx;
+  font-weight:300;
+  color:rgba(147,147,147,1);
+  margin-left: 8rpx;
+  vertical-align:top;
+  height: 56rpx;
+  line-height: 56rpx;
+}
+.nogoods_tip{
+  background-color: #ececec;
+  width: 488rpx;
+  height: 320rpx;
+  border-radius: 20rpx;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+.nogoods_tip text:nth-of-type(1){
+  font-size: 34rpx;
+  color: #353535;
+  display: block;
+  margin: 80rpx auto auto auto;
+}
+.nogoods_tip text:nth-of-type(2){
+  font-size: 34rpx;
+  color: #353535;
+  display: block;
+  margin: 5rpx auto auto auto;
+}
+.nogoods_tip button{
+  font-size: 34rpx;
+  color: #576B95;
+  display: block;
+  margin: 60rpx auto auto auto;
+}
+/* 无货 */

@@ -8,7 +8,8 @@
     "pages/goods_detail/goods_detail",
     "pages/payed/payed",
     "pages/order/order",
-    "pages/qiuxianruoke/qiuxianruoke"
+    "pages/qiuxianruoke/qiuxianruoke",
+    "pages/search/search"
   ],
   "window": {
     "backgroundColor": "#ffffff",

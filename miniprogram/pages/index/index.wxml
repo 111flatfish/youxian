@@ -20,8 +20,8 @@
       </swiper>
 <!-- 搜索框 -->
   <view class="index_search">
-    <input type="text" placeholder="搜索想要的商品"></input>
-    <icon type="search"></icon>
+    <input type="text" placeholder="搜索想要的商品" bindinput="bindinput"></input>
+    <icon type="search" bindtap="toSearch"></icon>
   </view>
   <!-- 今日上新 -->
   <view class="index_today">

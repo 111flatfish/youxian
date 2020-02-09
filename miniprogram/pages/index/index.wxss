@@ -29,6 +29,7 @@ page {
   top:16rpx;
   width:56rpx;
   height:56rpx;
+  z-index: 2003;
 }
 /* 今日上新 */
 .index_today_title{

@@ -1,0 +1,55 @@
+<!--miniprogram/pages/search/search.wxml-->
+<view class="container">
+    <view class="search_top">
+      <input type="text" placeholder="搜索"></input>
+      <mp-icon icon="search" size="{{22}}" class="searchIcon"></mp-icon>
+    </view>
+    <view class="search_content">
+      <view class="search_content_hasGoods" wx:if="{{hasgoods}}">
+      <!-- 有货 -->
+        <view class="search_content_hasGoods_item">
+          <view class="search_content_hasGoods_item_img">
+          <image src="{{goods.img}}"></image>
+          </view>
+         <view class="search_content_hasGoods_item_dec">
+          <text>{{goods.name}}</text>
+          <text>{{goods.lable}}</text>
+          <text>{{goods.num}}</text>
+         </view>
+          <view class="search_content_hasGoods_item_btn">
+            <button>到货提醒</button>
+          </view>
+        </view>
+      </view>
+      <!-- 缺货 -->
+      <view class="search_content_noGoods" wx:if="{{!hasgoods}}">
+        <view class="search_content_noGoods_item">
+          <view class="search_content_noGoods_item_img">
+          <image src="{{goods.img}}"></image>
+          </view>
+         <view class="search_content_noGoods_item_dec">
+         <view class="search_content_noGoods_msg">
+          <text>{{goods.name}}</text>
+          <text>{{goods.lable}}</text>
+          <text bindtap="toGoodsDetail">{{goods.num}}</text>
+         </view>
+          <view class="search_content_noGoods_btn">
+            <button>到货提醒</button>
+            <text>将发布到求闲若渴</text>
+          </view>
+         </view>
+        </view>
+        <!-- 弹窗 -->
+        <view class="nogoods_tip" wx:if="{{noGoodsTip}}">
+          <text>现在没货啦o(╥﹏╥)o</text>
+          <text>试试打开"到货提醒"吧</text>
+          <button bindtap="closeTip">我知道了</button>
+        </view>
+      </view>
+      <!-- 没有该商品 -->
+      <view class="search_content_noExist" wx:if="{{noExist}}">
+        <text>(ノへ￣、)</text>
+        <text>现在还没有开放<span>{{inputVal}}</span>的买卖喔</text>
+      </view>
+    </view>
+</view>
